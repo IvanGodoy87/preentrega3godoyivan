@@ -1,0 +1,51 @@
+@import "variables";
+
+.fondoContacto{
+    background:no-repeat url('../../imagenes/fondo\ contacto.jpg');
+    background-size: cover;
+    
+}
+
+.form-register {
+    width: 400px;
+    background: $color-principal;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    font-family: 'Nunito Sans", sans-serif1';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+                h4 {
+                    font-size: 22px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    height: 40px;
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 40px;
+                }
+                
+                .botons {
+                    width: 100%;
+                    background: $color-secundario;
+                    border: none;
+                    padding: 12px;
+                    color: white;
+                    margin: 16px 0;
+                    font-size: 16px;
+                }
+}
+  
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid $color-secundario;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+}

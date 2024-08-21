@@ -1,0 +1,90 @@
+@import "utilidades/contacto";
+@import "utilidades/index";
+@import "utilidades/variables";
+@import "utilidades/mixin";
+
+//COLOR DE FONDO Y FONT DE BODY
+body {
+    background-color: gray;
+    font-family: "Nunito Sans", sans-serif1;
+    text-align: center;
+    margin: 0;
+    }
+//*ESTILO DE MENU NAV*
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    font-weight: bold;
+    }
+//*estilo de header
+header {
+    background-color: $color-principal;
+    width: 100%;
+        nav ul{ 
+        width: 100%;
+            li{ 
+            display: inline-block;
+            padding: 0px 15px;
+                a{ 
+                text-decoration: none;
+                color: white;
+                font-family: "Nunito Sans", sans-serif1;
+                }
+            }
+        }
+}
+//tamaño img
+.image {
+    height: 600px;
+    @media (max-width: 800px) {
+    @include medidas(300px,300px)
+    }
+}
+  
+//     estilos body
+.info {
+    text-align: center;
+    margin: 20px;
+}
+  
+.cuerpo-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
+}
+  
+//acomodar textos por columnas
+.contenedor {
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+    .imagenAlquiler {
+        @include medidas(150px, 250px);
+        justify-content: center;
+    }
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+}
+//*fondo y font de footer
+footer {
+    background-color: $color-principal;
+    color: white;
+}
+  
+.lista-servicios {
+    list-style-type: square;
+}
+.container-fluid {
+    @media (max-width: 800px) {
+      justify-content: end !important;
+    }
+}
+  
