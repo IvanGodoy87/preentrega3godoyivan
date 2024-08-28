@@ -50,6 +50,7 @@ header {
 }
   
 .cuerpo-principal {
+    color: #7a7a7a;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -77,6 +78,12 @@ header {
 footer {
     background-color: $color-principal;
     color: white;
+    padding: 40px;
+     div.flexfooter{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+}
 }
   
 .lista-servicios {
