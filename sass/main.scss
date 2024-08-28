@@ -20,6 +20,7 @@ body {
     }
 //*estilo de header
 header {
+    padding-top: 30px;
     background-color: $color-principal;
     width: 100%;
         nav ul{ 
@@ -79,11 +80,12 @@ footer {
     background-color: $color-principal;
     color: white;
     padding: 40px;
-     div.flexfooter{
+    div.flexfooter{
         display: flex;
-        gap: 20px;
-        align-items: center;
-}
+        justify-content: center;
+        gap: 10px;
+        
+    }
 }
   
 .lista-servicios {

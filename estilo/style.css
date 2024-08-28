@@ -1,5 +1,5 @@
 .fondoContacto {
-  background: no-repeat url("../imagenes/fondocontacto.jpg");
+  background: no-repeat url("././imagenes/fondocontacto.jpg");
   background-size: cover;
 }
 
@@ -149,6 +149,7 @@ body {
 }
 
 header {
+  padding-top: 30px;
   background-color: black;
   width: 100%;
 }
@@ -217,8 +218,8 @@ footer {
 }
 footer div.flexfooter {
   display: flex;
-  gap: 20px;
-  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .lista-servicios {
