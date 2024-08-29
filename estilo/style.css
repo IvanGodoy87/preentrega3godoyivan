@@ -1,5 +1,5 @@
 .fondoContacto {
-  background: no-repeat url("././imagenes/fondocontacto.jpg");
+  background: no-repeat url("../imagenes/fondocontacto.jpg");
   background-size: cover;
 }
 
@@ -97,17 +97,12 @@
   margin-bottom: 15px;
   color: #7a7a7a;
 }
-.card .contenido-card ul {
-  line-height: 1.8;
-  color: #6a6a6a;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
 .card .contenido-card p {
   line-height: 1.8;
   color: #6a6a6a;
   font-size: 14px;
   margin-bottom: 5px;
+  text-align: center;
 }
 .card .contenido-card a {
   display: inline-block;
@@ -133,6 +128,11 @@
     margin: 15px;
   }
 }
+.logo {
+  height: 10%;
+  width: 10%;
+}
+
 body {
   background-color: gray;
   font-family: "Nunito Sans", sans-serif1;
@@ -169,12 +169,6 @@ header nav ul li a {
 .image {
   height: 600px;
 }
-@media (max-width: 800px) {
-  .image {
-    width: 300px;
-    height: 300px;
-  }
-}
 
 .info {
   text-align: center;
@@ -189,11 +183,6 @@ header nav ul li a {
   gap: 20px;
   padding: 30px;
 }
-@media (max-width: 800px) {
-  .cuerpo-principal {
-    grid-template-columns: 1fr;
-  }
-}
 
 .contenedor {
   display: flex;
@@ -205,11 +194,6 @@ header nav ul li a {
   height: 250px;
   justify-content: center;
 }
-@media (max-width: 800px) {
-  .contenedor {
-    flex-direction: column;
-  }
-}
 
 footer {
   background-color: black;
@@ -218,7 +202,7 @@ footer {
 }
 footer div.flexfooter {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 10px;
 }
 
@@ -227,8 +211,21 @@ footer div.flexfooter {
 }
 
 @media (max-width: 800px) {
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+  .cuerpo-principal {
+    grid-template-columns: 1fr;
+  }
+  .contenedor {
+    flex-direction: column;
+  }
   .container-fluid {
     justify-content: end !important;
+  }
+  footer div .flexfooter {
+    justify-content: center;
   }
 }
 

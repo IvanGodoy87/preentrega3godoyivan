@@ -3,6 +3,10 @@
 @import "utilidades/variables";
 @import "utilidades/mixin";
 
+.logo {
+    height: 10%;
+    width: 10%;
+}
 //COLOR DE FONDO Y FONT DE BODY
 body {
     background-color: gray;
@@ -39,9 +43,6 @@ header {
 //tamaño img
 .image {
     height: 600px;
-    @media (max-width: 800px) {
-    @include medidas(300px,300px)
-    }
 }
   
 //     estilos body
@@ -57,9 +58,6 @@ header {
     align-items: center;
     gap: 20px;
     padding: 30px;
-    @media (max-width: 800px) {
-      grid-template-columns: 1fr;
-    }
 }
   
 //acomodar textos por columnas
@@ -71,9 +69,6 @@ header {
         @include medidas(150px, 250px);
         justify-content: center;
     }
-    @media (max-width: 800px) {
-      flex-direction: column;
-    }
 }
 //*fondo y font de footer
 footer {
@@ -82,18 +77,30 @@ footer {
     padding: 40px;
     div.flexfooter{
         display: flex;
-        justify-content: center;
+        justify-content:left;
         gap: 10px;
-        
-    }
+        }
 }
   
 .lista-servicios {
     list-style-type: square;
 }
-.container-fluid {
-    @media (max-width: 800px) {
-      justify-content: end !important;
+
+
+@media (max-width: 800px) {
+    .image{
+        @include medidas(300px,300px)
+    }
+    .cuerpo-principal{
+        grid-template-columns: 1fr; 
+    }
+    .contenedor{
+        flex-direction: column; 
+    }
+    .container-fluid{
+        justify-content: end !important;
+    }
+    footer div .flexfooter{
+        justify-content:center;
     }
 }
-  
