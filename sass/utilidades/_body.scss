@@ -1,0 +1,43 @@
+
+@import "variables";
+@import "mixin";
+
+//body
+
+body {
+    background-color: gray;
+    font-family: "Nunito Sans", sans-serif1;
+    text-align: center;
+    margin: 0;
+    }
+
+.image {
+    height: 600px;
+}
+
+.info {
+    text-align: center;
+    margin: 20px;
+}
+  
+.cuerpo-principal {
+    color: #7a7a7a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+  
+.contenedor {
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+    .imagenAlquiler {
+        @include medidas(150px, 250px);
+        justify-content: center;
+    }
+}
+.lista-servicios {
+    list-style-type: square;
+}

@@ -1,106 +1,16 @@
+//Utilidades
+
+@import "utilidades/header";
+@import "utilidades/body";
+@import "utilidades/footer";
 @import "utilidades/contacto";
 @import "utilidades/index";
-@import "utilidades/variables";
-@import "utilidades/mixin";
 
-.logo {
-    height: 10%;
-    width: 10%;
-}
-//COLOR DE FONDO Y FONT DE BODY
-body {
-    background-color: gray;
-    font-family: "Nunito Sans", sans-serif1;
-    text-align: center;
-    margin: 0;
-    }
-//*ESTILO DE MENU NAV*
-.navbar-nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center !important;
-    font-weight: bold;
-    }
-//*estilo de header
-header {
-    padding-top: 30px;
-    background-color: $color-principal;
-    width: 100%;
-        nav ul{ 
-        width: 100%;
-            li{ 
-            display: inline-block;
-            padding: 0px 15px;
-                a{ 
-                text-decoration: none;
-                color: white;
-                font-family: "Nunito Sans", sans-serif1;
-                }
-            }
-        }
-}
-//tamaño img
-.image {
-    height: 600px;
-}
-  
-//     estilos body
-.info {
-    text-align: center;
-    margin: 20px;
-}
-  
-.cuerpo-principal {
-    color: #7a7a7a;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 20px;
-    padding: 30px;
-}
-  
-//acomodar textos por columnas
-.contenedor {
-    display: flex;
-    text-align: center;
-    justify-content:space-around;
-    .imagenAlquiler {
-        @include medidas(150px, 250px);
-        justify-content: center;
-    }
-}
-//*fondo y font de footer
-footer {
-    background-color: $color-principal;
-    color: white;
-    padding: 40px;
-    div.flexfooter{
-        display: flex;
-        justify-content:left;
-        gap: 10px;
-        }
-}
-  
-.lista-servicios {
+
+
+
+
+
+servicios {
     list-style-type: square;
-}
-
-
-@media (max-width: 800px) {
-    .image{
-        @include medidas(300px,300px)
-    }
-    .cuerpo-principal{
-        grid-template-columns: 1fr; 
-    }
-    .contenedor{
-        flex-direction: column; 
-    }
-    .container-fluid{
-        justify-content: end !important;
-    }
-    footer div .flexfooter{
-        justify-content:center;
-    }
 }

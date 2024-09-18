@@ -1,0 +1,17 @@
+
+@import "variables";
+@import "mixin";
+
+//*fondo y font de footer
+
+footer {
+    background-color: $color-principal;
+    color: white;
+    padding: 40px;
+    div.flexfooter{
+        display: flex;
+        justify-content:left;
+        gap: 10px;
+        }
+}
+  
